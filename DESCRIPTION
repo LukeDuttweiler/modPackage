@@ -4,9 +4,7 @@ Version: 0.1.0
 Authors@R: 
     person("Luke", "Duttweiler", , "lduttweiler@hsph.harvard.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-0467-995X"))
-Description: This package contains workflow tools that allow for the development 
-of R packages that use multi-level directory organization of code. This is currently a
-very simple development version. Will be expanded. 
+Description: This package contains workflow tools that allow for the development of R packages that use multi-level directory organization of code. This is currently avery simple development version. Will be expanded. 
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
