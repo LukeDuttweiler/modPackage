@@ -1,0 +1,5 @@
+^modPackage\.Rproj$
+^\.Rproj\.user$
+workingFiles
+Rbackup
+^LICENSE\.md$
