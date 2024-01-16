@@ -13,3 +13,5 @@ Imports:
     devtools (>= 2.4.0),
     here (>= 1.0.1),
     usethis (>= 2.2.0)
+URL: https://github.com/LukeDuttweiler/modPackage
+BugReports: https://github.com/LukeDuttweiler/modPackage/issues
