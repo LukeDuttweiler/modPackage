@@ -8,7 +8,7 @@ Description: This package contains workflow tools that allow for the development
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.0
 Imports: 
     devtools (>= 2.4.0),
     here (>= 1.0.1),

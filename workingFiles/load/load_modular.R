@@ -70,8 +70,8 @@ load_modular <- function(path = '.', ...){
 
   #As long as copies were successful, load all and document
   if(all(rFilesCop)){
-    devtools::load_all(path = path, ...)
     devtools::document(pkg = path)
+    devtools::load_all(path = path, ...)
   }else{
     stop('Error in sending working files to R directory.')
   }
