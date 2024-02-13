@@ -68,8 +68,13 @@ load_modular <- function(path = '.', ...){
   #Copy into R directory
   rFilesCop <- file.copy(workingFiles, newWFNames, overwrite = TRUE, copy.date = TRUE)
 
+  #Carry package level documentation over from backups
+  pckgDoc <- list.files(bupDir, pattern = '-package.R$', full.names = TRUE)
+  newPDName <- gsub(paste0('.', bupDir, '/'), paste0('./', rDir, '/'), pckgDoc)
+  pckgDocCop <- file.copy(pckgDoc, newPDName, copy.date = TRUE)
+
   #As long as copies were successful, load all and document
-  if(all(rFilesCop)){
+  if(all(rFilesCop) & all(pckgDocCop)){
     devtools::document(pkg = path)
     devtools::load_all(path = path, ...)
   }else{
