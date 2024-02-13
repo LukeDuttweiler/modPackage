@@ -70,7 +70,7 @@ load_modular <- function(path = '.', ...){
 
   #Carry package level documentation over from backups
   pckgDoc <- list.files(bupDir, pattern = '-package.R$', full.names = TRUE)
-  newPDName <- gsub(paste0('.', bupDir, '/'), paste0('./', rDir, '/'), pckgDoc)
+  newPDName <- gsub(bupDir, rDir, pckgDoc)
   pckgDocCop <- file.copy(pckgDoc, newPDName, copy.date = TRUE)
 
   #As long as copies were successful, load all and document
